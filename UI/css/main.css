@@ -7,8 +7,7 @@
 body {
     margin:0;
     padding:0;
-    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    font: 1em/1.5 "Quicksand", "Lato", sans-serif;
 }
 
 .container {
@@ -17,3 +16,131 @@ body {
     overflow: hidden;
 
 }
+
+/* styling the forms ------------ */
+#signup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px;
+    border: 3px solid rgba(5,66,10,.1);
+    box-shadow:0 5px 10px rgba(5, 66,10,.2);
+    border-radius: 10px 20px;
+    width: 40%;
+    hsl(125, 86%, 14%);
+
+
+}
+
+#signup-box h1 {
+    margin-bottom: 30px;
+    color: hsl(125, 86%, 14%);
+    text-shadow: 0 1px 1px rgba(0,0,0, 10)
+    font-weight: 700;
+    margin-top:0;
+}
+
+#signup-box p {
+    color: hsl(201, 23%, 34%);
+    margin-bottom: 70px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#signup-box input {
+    width: 80%;
+    box-shadow: none;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #999;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 1.1em;
+
+
+}
+
+#signup-box form div {
+    position: relative;
+}
+
+#signup-box form div label {
+    position: absolute;
+    top: 10x;
+    left:0;
+    color:#999;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: 500;
+}
+
+#signup-box input:focus ~ label,
+#signup-box input:valid ~ label {
+    top: -39px;
+    left: 0;
+    color: hsl(125, 56%, 29%);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#signup-box #btn-signup {
+    padding: 10px;
+    background: hsl(125, 86%, 14%);;
+    border-bottom: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    width: 50%;
+ }
+
+ #signup-box #btn-signup:hover  {
+     background: #53c0d6;
+     color: #fff;
+ }
+
+ #signup-box #btn-login {
+     padding: 10px 5px;
+     border: none;
+     background-color: inherit;
+     cursor: pointer;
+     color: hsl(125, 86%, 14%);;
+     font-size: 1.2em;
+     margin-top: 20px;
+     margin-bottom: 10px;
+     font-weight: 700;
+     margin-right: 50px;
+
+ }
+
+ #signup-box #btn-login:hover  {
+     background-color:#e3f2fd;
+     color: #2E8C9E;
+     border-radius: 12px;
+     width:70%;
+ }
+
+/*Displaying form fields in one line ------------ */
+
+form .display-one-line {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+form .float-left {
+    width: 50%;
+}
+
+form .float-right {
+    width: 50%;
+
+}
+
