@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Crowd-source questions for a meetup. Questioner helps the meetup organizer prioritize questions to be answered">
+    <meta name="keywords" content="Questioner, meetup, prioritize questions to be answered">
+    <meta name="author" content="Munira Omar">
+    <title>Welcome to Questioner</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700" rel="stylesheet">
+</head>
+<body>
+    <div id="login-box" class="container">
+        <h1>Questioner</h1>
+        <p> Welcome To Questioner</p>
+        <form id="login-form">
+            <div>
+                <input type="text" name="userEmail" required="">
+                <label>Email</label>
+            </div>
+
+            <div>
+                <input type="password" name="userPassword" required="">
+                <label>Password</label>
+            </div>
+
+             <div class="display-one-line">
+                <div class="float-left"></div>
+                <div cclass="float-right">
+                    <input id="btnForgotPassword" type="submit" name="btnForgotPassword" value="Forgot password?" onclick="window.location.href ='passwordRecovery.html'">
+                </div>
+            </div>
+
+            <div class="display-one-line">
+                <div class="float-left">
+                    <input id="btn-signup" type="submit" name="btnSignup" value="Create an account" onclick="window.location.href ='registration.html'">
+                </div>
+                <div class="float-right">
+                    <input id="btn-login" type="submit" name="btnLogin" value="Sign in" onclick="window.location.href ='user_dashboard.html'">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+

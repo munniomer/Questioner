@@ -18,7 +18,8 @@ body {
 }
 
 /* styling the forms ------------ */
-#signup-box {
+#signup-box,
+#login-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,11 +31,15 @@ body {
     border-radius: 10px 20px;
     width: 40%;
     hsl(125, 86%, 14%);
-
-
 }
 
-#signup-box h1 {
+#login-box {
+    width: 28%;
+    height: 70%;
+}
+
+#signup-box h1,
+#login-box h1 {
     margin-bottom: 30px;
     color: hsl(125, 86%, 14%);
     text-shadow: 0 1px 1px rgba(0,0,0, 10)
@@ -42,14 +47,16 @@ body {
     margin-top:0;
 }
 
-#signup-box p {
+#signup-box p,
+#login-box p {
     color: hsl(201, 23%, 34%);
     margin-bottom: 70px;
     font-size: 1.2em;
     font-weight: 500;
 }
 
-#signup-box input {
+#signup-box input,
+#login-box input {
     width: 80%;
     box-shadow: none;
     border: none;
@@ -58,15 +65,20 @@ body {
     margin-bottom: 40px;
     font-weight: 500;
     font-size: 1.1em;
-
-
 }
 
-#signup-box form div {
+#login-box input {
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+#signup-box form div,
+#login-box form div {
     position: relative;
 }
 
-#signup-box form div label {
+#signup-box form div label,
+#login-box form div label  {
     position: absolute;
     top: 10x;
     left:0;
@@ -77,7 +89,9 @@ body {
 }
 
 #signup-box input:focus ~ label,
-#signup-box input:valid ~ label {
+#signup-box input:valid ~ label,
+#login-box input:focus ~ label,
+#login-box input:valid ~ label {
     top: -39px;
     left: 0;
     color: hsl(125, 56%, 29%);
@@ -85,7 +99,8 @@ body {
     font-weight: 500;
 }
 
-#signup-box #btn-signup {
+#signup-box #btn-signup,
+#login-box #btn-login  {
     padding: 10px;
     background: hsl(125, 86%, 14%);;
     border-bottom: none;
@@ -100,12 +115,24 @@ body {
     width: 50%;
  }
 
- #signup-box #btn-signup:hover  {
+#login-box #btn-login  {
+     margin-top:0;
+ }
+
+#login-form .display-one-line #btnForgotPassword {
+    margin-top: -12px;
+    margin-bottom: 40px;
+}
+
+#signup-box #btn-signup:hover,
+#login-box #btn-login:hover {
      background: #53c0d6;
      color: #fff;
  }
 
- #signup-box #btn-login {
+#signup-box #btn-login,
+#login-box #btn-signup,
+#login-box #btnForgotPassword {
      padding: 10px 5px;
      border: none;
      background-color: inherit;
@@ -116,30 +143,48 @@ body {
      margin-bottom: 10px;
      font-weight: 700;
      margin-right: 50px;
-
  }
 
- #signup-box #btn-login:hover  {
+#login-box #btn-signup,
+#login-box #btnForgotPassword {
+    width: 100%;
+    margin-top: 0;
+    color:hsl(122, 29%, 61%);
+ }
+
+ #signup-box #btn-login:hover,
+ #login-box #btn-signup:hover ,
+ #login-box #btnForgotPassword:hover {
      background-color:#e3f2fd;
      color: #2E8C9E;
      border-radius: 12px;
      width:70%;
  }
+ #login-box #btn-signup:hover ,
+ #login-box #btnForgotPassword:hover {
+    width:100%;
+ }
 
+ #login-box #btn-login {
+    width:70%;
+ }
 /*Displaying form fields in one line ------------ */
 
-form .display-one-line {
+#signup-form .display-one-line,
+#login-form .display-one-line {
     display: flex;
     width: 100%;
     margin-top: 20px;
 
 }
 
-form .float-left {
+#signup-form .float-left,
+#login-form .float-left {
     width: 50%;
 }
 
-form .float-right {
+#signup-form .float-right,
+#login-form .float-right {
     width: 50%;
 
 }
