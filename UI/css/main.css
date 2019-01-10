@@ -289,8 +289,44 @@ ul {
     background-color:#2F8132;
     border: 1px solid #2F8132;
 }
+
+div #meetups {
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: hsl(122, 47%, 35%);
+    margin-top: 12px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.col {
+    padding: 1em;
+    margin: 0 .5em .8em;
+    background:#ffffff;
+    border-radius: 15px 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-top: 5px solid #fff;
+}
+
+
+
+.col p {
+    font-size: .95em;
+    margin: 0 0 1em 0;
+    line-height: 1.9;
+    text-align: justify;
+
+
+}
+
+.col h3 {
+    color:#000;
+    text-align: center;
+}
   @media (min-width: 769px) {
-    .main-header {
+    .main-header,
+    .row {
         width: 80%;
         margin: 0 auto;
         max-width: 1150px;
@@ -300,8 +336,16 @@ ul {
   @media (min-width: 769px) {
 
     .main-header,
-    .main-nav {
+    .main-nav,
+    .row {
         display: flex;
+    }
+
+    .col {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
     }
 
     .main-header {
@@ -313,7 +357,8 @@ ul {
 
 @media (min-width: 1025px) {
 
-    .main-header{
+    .main-header,
+    .row {
         flex-direction: row;
         justify-content: space-between;
     }
