@@ -239,7 +239,56 @@ ul {
     border-top: #05400A 4px solid;
     border-bottom-right-radius: 10px;
   }
+#banner {
+    height: 80vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/codes.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+   background-color:pink;
+   background-blend-mode: multiply;
+}
 
+#banner-inner h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+#banner-inner h2,
+#banner-inner p {
+    font-weight: lighter;
+}
+
+#banner-inner p {
+    font-size: 20px;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin: 50px auto 0 auto;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #05400A;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color:#2F8132;
+    border: 1px solid #2F8132;
+}
   @media (min-width: 769px) {
     .main-header {
         width: 80%;
@@ -261,7 +310,6 @@ ul {
     }
 
 }
-
 
 @media (min-width: 1025px) {
 
