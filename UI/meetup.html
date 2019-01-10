@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Crowd-source questions for a meetup. Questioner helps the meetup organizer prioritize questions to be answered">
+    <meta name="keywords" content="Questioner, meetup, prioritize questions to be answered">
+    <meta name="author" content="Munira Omar">
+    <title>Welcome to Questioner</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700" rel="stylesheet">
+</head>
+<body id="meetup_page">
+    <div id="header">
+        <header class="main-header">
+            <h1 class="app-name"><a href="index.html">Questioner</a></h1>
+            <ul class="main-nav">
+                <li class="active"><a href="meetup.html">Create a Meetup</a></li>
+                <li><a href="login.html">Sign in</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="meetup-box" class="container">
+        <h1>Create Meetup </h1>
+        <form id="meetup-form">
+            <div>
+                <input type="text" name="meetup_title" required="">
+                <label>Meetup title</label>
+            </div>
+
+            <div>
+                <input type="text" name="meetup_location" required="">
+                <label>Meetup Location</label>
+            </div>
+
+             <div>
+                <input type="text" name="meetup_date" required="">
+                <label>Meetup Date</label>
+            </div>
+
+            <div>
+                <input type="text" name="meetup_organizer" required="">
+                <label>Organized by</label>
+            </div>
+
+            <input id="btn-meetup" type="submit" name="btnMeetup" value="Create Meetup">
+
+        </form>
+    </div>
+</body>
+</html>
+
+
